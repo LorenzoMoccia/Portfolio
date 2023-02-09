@@ -4,7 +4,7 @@
 .about-container{
     display: flex;
     flex-direction: column;
-    width: 96%;
+    width: 85%;
     justify-content: center;
     margin: auto;
 }
