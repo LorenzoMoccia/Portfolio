@@ -38,12 +38,16 @@
 .profile-img-container{
     width: 200px;
     height: 200px;
-    border: 1px solid black;
     margin: 10px;
 }
 
-.profile-text-container{
+.profile-img{
+    width: 200px;
+    height: 200px;
+}
 
+.profile-img:hover{
+    transform: none;
 }
 
 .profile-p{
