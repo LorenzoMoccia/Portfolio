@@ -1,0 +1,40 @@
+.hero{
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/hero-background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-text{
+    color: white;
+    text-align: center;
+}
+
+.hero-subtitle:before{
+    content: '';
+    animation: animate infinite 12s;
+}
+@keyframes animate{
+    0%{
+        content: 'Full Stack Web Developer';
+    }
+    20%{
+        content: 'Freelancer';
+    }
+    40%{
+        content: 'Front End Specialization';
+    }
+    60%{
+        content: 'Always learning new things..';
+    }
+    80%{
+        content: 'Looking for a job!';
+    }
+    100%{
+        content: 'Based in Italy';
+    }
+}
+

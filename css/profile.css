@@ -1,0 +1,41 @@
+.profile-section-container{
+    background: url('../img/profile-section-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 100% 600px;
+    display: flex;
+    justify-content: center;
+    border: 1px dashed red;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    background-color: #F5F5F5;
+    
+}
+
+.profile-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.profile-circle-container{
+    width: 200px;
+    height: 200px;
+    border: 1px dashed yellow;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.profile-title-container{
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-descr-container{
+    color: white;
+    width: 40%;
+    border: 1px solid yellow;
+    margin: auto;
+    margin-bottom: 30px;
+}

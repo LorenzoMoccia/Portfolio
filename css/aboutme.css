@@ -1,0 +1,104 @@
+.aboutme-section{
+    display: flex;
+    justify-content: center;
+    background-color: #F5F5F5;
+}
+
+.about-section-container{
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5;
+    margin-top: 100px;
+}
+
+.about-container{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.about-content-container{
+    display: flex;
+}
+
+.about-c1{
+    width: 50%;
+}
+
+.about-c2{
+    width: 50%;
+}
+
+.c1-r1{
+    display: flex;
+}
+
+.profile-img-container{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.profile-text-container{
+    margin-left: 30px;
+}
+
+.profile-p{
+    margin: 20px;
+}
+
+.skill-container{
+    margin: 10px;
+}
+
+.skill{
+    width: 100%;
+    height: 10px;
+    margin-bottom: 10px;
+    background-color: #CDE1F8;
+}
+
+.skill-percent{
+    background-color: #0078ff;
+    height: 10px;
+}
+
+.skill-title{
+    margin-left: 10px;
+}
+
+.skill-p{
+    margin-bottom: 7px;
+}
+
+#html{
+    width: 85%;
+}
+
+#css{
+    width: 75%;
+}
+
+#javascript{
+    width: 70%;
+}
+
+#php{
+    width: 50%;
+}
+
+.c2-container{
+    margin: 20px;
+}
+
+.c2-hr{
+    width: 100px;
+    color: #0078FF;
+}
+
+.c2-p{
+    margin-top: 20px;
+}

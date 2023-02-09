@@ -1,0 +1,49 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+.about-container{
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    justify-content: center;
+    margin: auto;
+}
+
+.about-c1{
+    width: 100%;
+}
+
+.about-c2{
+    width: 90%;
+    text-align: center;
+}
+
+.c1-r2{
+    margin-top: 40px;
+}
+
+.c2-hr{
+    margin: auto;
+}
+
+.about-content-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.works-container{
+    width: 90%;
+}
+
+.work-card{
+    width: 100%;
+}
+
+.profile-descr-container{
+    width: 70%;
+}
+
+
+} 
+
