@@ -3,8 +3,18 @@
 
 body{
     max-width: 480px;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
+
+
+
+.hero{
+    background-image: url('../img/hero.webp');
+    background-size: cover;
     
+}
+
 .about-container{
     display: flex;
     flex-direction: column;

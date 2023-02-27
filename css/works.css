@@ -44,14 +44,105 @@
     margin-left: 10px;
 }
 
+.work-img{
+    overflow: hidden;
+    position: relative;
+}
+
 .work-img-container{
     width: 100%;
     height: 200px;
-    border: 1px dashed red;
+    border: 1px solid black;
+}
+
+.work-img-container:hover{
+    transform: scale(1.5);
 }
 
 .work-descr-container{
     padding: 10px;
     background-color: white;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
 }
 
+.work-img-size{
+    width: 100%;
+    height: 100%;
+}
+
+.visit-work-btn{
+    width: 60px;
+    height: 20px;
+    color: white;
+    border: none;
+    background-color: #0096FF;
+    font-style: bold;
+}
+
+/*--BACKGROUND IMAGES WORK--*/
+#boolzapp{
+    background: url('../img/work-1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+#todolist{
+    background: url('../img/work-2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+#campominato{
+    background: url('../img/work-3.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+#responsive{
+    background: url('../img/work-4.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+#portfolio{
+    background: url('../img/work-5.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+#spotify{
+    background: url('../img/Spotify.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+/*---WORKS CODE LANG COLOR--*/
+#portfolio-color{
+    color: blue;
+}
+
+#css-color{
+    color: orange;
+}
+
+#vue-color{
+    color:forestgreen;
+}
+
+#js-color{
+    color: darkgoldenrod;
+}

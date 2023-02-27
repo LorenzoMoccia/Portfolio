@@ -15,37 +15,41 @@
     <link rel="stylesheet" href="css/contactus.css">
     <link rel="stylesheet" href="css/typography.css">
     <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/hamburger-menu.css">
+    <link rel="stylesheet" href="css/github-card.css">
     <!----------/LINK CSS---------->
     <!--GOOGLE FONT-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;800&display=swap" rel="stylesheet">
     <!--/GOOGLE FONT-->
-    <title>Document</title>
+    <!--FONTAWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--/FONTAWESOME-->
+    <title>Portfolio - Lorenzo Moccia</title>
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <div class="logo-container">
-                <h1 class="logo">Portfolio</h1>
+        <div class="topnav">
+            <a href="#home" class="active"><h1>Portfolio</h1></a>
+            
+            <div id="myLinks">
+                <a href="#aboutme">About</a>
+                <a href="#work">My Works</a>
+                <a href="#contact">Contact</a>
             </div>
-
-            <nav class="navbar">
-                <ul class="navbar-list">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Work</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-        </div>
+            
+            <a href="javascript:void(0);" class="icon" onclick="hamburgerClick()">
+                <i class="fa fa-bars fa-xl"></i>
+            </a>
+            </div>    
     </header>
 
     <main>
         <!--PAGE CONTAINER-->
         <div class="page-container">
             <!--HERO-->
-            <section class="hero-section">
+            <section class="hero-section" id="hero">
                 <div class="hero">
                     <div class="hero-text">
                       <h1 class="hero-title">I am Lorenzo Moccia</h1>
@@ -56,7 +60,7 @@
             <!--/HERO--> 
 
             <!--ABOUT ME-->
-            <section class="aboutme-section">
+            <section class="aboutme-section" id="aboutme">
                 <div class="about-section-container">
                     <!--CONTAINER-->
                     <div class="about-container">
@@ -130,9 +134,9 @@
                                 <h1>About me</h1>
                                 <hr class="c2-hr">
 
-                                <p class="c2-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut inventore repellat temporibus iste tenetur enim dignissimos explicabo officiis at. Sequi molestiae et optio temporibus tenetur velit quis atque excepturi similique!</p>
-                                <p class="c2-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, officiis culpa dignissimos vel aliquam magnam pariatur non nisi temporibus sequi ex odio labore ut sed porro optio officia iure consequuntur.</p>
-                                <p class="c2-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo libero architecto nulla quas, porro dolores, voluptatem labore cupiditate accusantium quaerat in, odio mollitia fugit necessitatibus qui sed consectetur velit? Aliquid.</p>
+                                <p class="c2-p">Mi chiamo Lorenzo, sono un ragazzo di 24 anni che ha sempre avuto la passione per l'informatica in generale.<br>Da qualche anno ho approcciato la programmazione, sia con <b>C#</b> che con tutti i linguaggi che riguardano il <b>Web Development.</b></p>
+                                <p class="c2-p">Ho appena finito il corso di <b id="boolean">Boolean Careers</b> per diventare <b>Full Stack Web Developer</b>, studiando vari linguaggi sia per la parte <b>Front End</b> che <b>Back End.</b><br>Vorrei iniziare il mio percorso lavorativo in ambito <b>Front End</b>. </p>
+                                <p class="c2-p">Sono molto motivato e metto passione in tutto ciò che faccio, grandi capacità nel <b>problem solving</b> e nel lavoro in <b>Team.</b><br>Il mio <b>Portfolio</b> è in continuo aggiornamento!</p>
                             </div>
                         </div>
                         <!--/COLUMN 2-->
@@ -144,11 +148,11 @@
             <!--/ABOUT ME-->
 
             <!--WORKS-->
-            <section class="works-section">
+            <section class="works-section" id="work">
                 <!--TEXT CONTAINER-->
                 <div class="works-title-container">
                     <h1>MY WORKS</h1>
-                    <p>Lorem ipsum, dolor sit ament consectetur adipisicing elit.</p>
+                    <p>Qua puoi trovare alcuni dei miei progetti.</p>
 
                     <div class="works-hr-container">
                         <hr class="works-hr">
@@ -163,21 +167,23 @@
                         <!--WORK-->
                         <div class="work-card">
                             <!--WORK IMG-->
-                                <div class="work-img-container">
-
+                                <div class="work-img">
+                                    <div class="work-img-container" id="boolzapp">
+                                        
+                                    </div>
                                 </div>
                             <!--/WORK IMG-->
 
                             <!--WORK DESCR CONTAINER-->
                             <div class="work-descr-container">
                                 <div class="work-text-container">
-                                    <p class="work-title">Title</p>
-                                    <small>Web Design / 18 Sep. 2023</small>
+                                    <p class="work-title">Boolzapp | Whatsapp clone</p>
+                                    <small id="vue-color">VueJs </small>
                                 </div>
 
                                 <!--BUTTON VISIT WORK-->
-                                <div class="visit-work-circle">
-
+                                <div class="visit-work-container">
+                                    <button onclick="window.open('https://lorenzomoccia.com/vue-boolzapp/','_blank')" class="visit-work-btn">View</button>
                                 </div>
                                 <!--/BUTTON VISIT WORK-->
                             </div>
@@ -188,21 +194,23 @@
                         <!--WORK-->
                         <div class="work-card">
                             <!--WORK IMG-->
-                                <div class="work-img-container">
-
+                            <div class="work-img">
+                                <div class="work-img-container" id="todolist">
+                                    
                                 </div>
+                            </div>
                             <!--/WORK IMG-->
 
                             <!--WORK DESCR CONTAINER-->
                             <div class="work-descr-container">
                                 <div class="work-text-container">
-                                    <p class="work-title">Title</p>
-                                    <small>Web Design / 18 Sep. 2023</small>
+                                    <p class="work-title">ToDo List</p>
+                                    <small id="vue-color">VueJs </small>
                                 </div>
 
                                 <!--BUTTON VISIT WORK-->
-                                <div class="visit-work-circle">
-
+                                <div class="visit-work-container">
+                                    <button onclick="window.open('https://lorenzomoccia.com/vue-todolist/','_blank')" class="visit-work-btn">View</button>
                                 </div>
                                 <!--/BUTTON VISIT WORK-->
                             </div>
@@ -213,21 +221,23 @@
                         <!--WORK-->
                         <div class="work-card">
                             <!--WORK IMG-->
-                                <div class="work-img-container">
-
+                            <div class="work-img">
+                                <div class="work-img-container" id="campominato">
+                                    
                                 </div>
+                            </div>
                             <!--/WORK IMG-->
 
                             <!--WORK DESCR CONTAINER-->
                             <div class="work-descr-container">
                                 <div class="work-text-container">
-                                    <p class="work-title">Title</p>
-                                    <small>Web Design / 18 Sep. 2023</small>
+                                    <p class="work-title">Campo Minato | Game</p>
+                                    <small id="js-color">Javascript </small>
                                 </div>
 
                                 <!--BUTTON VISIT WORK-->
-                                <div class="visit-work-circle">
-
+                                <div class="visit-work-container">
+                                    <button onclick="window.open('https://lorenzomoccia.com/js-campominato/','_blank')" class="visit-work-btn">View</button>
                                 </div>
                                 <!--/BUTTON VISIT WORK-->
                             </div>
@@ -240,21 +250,23 @@
                         <!--WORK-->
                         <div class="work-card">
                             <!--WORK IMG-->
-                                <div class="work-img-container">
-
+                            <div class="work-img">
+                                <div class="work-img-container" id="responsive">
+                                    
                                 </div>
+                            </div>
                             <!--/WORK IMG-->
 
                             <!--WORK DESCR CONTAINER-->
                             <div class="work-descr-container">
                                 <div class="work-text-container">
-                                    <p class="work-title">Title</p>
-                                    <small>Web Design / 18 Sep. 2023</small>
+                                    <p class="work-title">Responsive Layout | Media Queries</p>
+                                    <small id="css-color">CSS </small>
                                 </div>
 
                                 <!--BUTTON VISIT WORK-->
-                                <div class="visit-work-circle">
-
+                                <div class="visit-work-container">
+                                    <button onclick="window.open('https://lorenzomoccia.com/htmlcss-responsive-layout/','_blank')" class="visit-work-btn">View</button>
                                 </div>
                                 <!--/BUTTON VISIT WORK-->
                             </div>
@@ -265,21 +277,23 @@
                         <!--WORK-->
                         <div class="work-card">
                             <!--WORK IMG-->
-                                <div class="work-img-container">
-
+                            <div class="work-img">
+                                <div class="work-img-container" id="portfolio">
+                                    
                                 </div>
+                            </div>
                             <!--/WORK IMG-->
 
                             <!--WORK DESCR CONTAINER-->
                             <div class="work-descr-container">
                                 <div class="work-text-container">
-                                    <p class="work-title">Title</p>
-                                    <small>Web Design / 18 Sep. 2023</small>
+                                    <p class="work-title">Portfolio | Front End</p>
+                                    <small id="portfolio-color">HTML & CSS </small>
                                 </div>
 
                                 <!--BUTTON VISIT WORK-->
-                                <div class="visit-work-circle">
-
+                                <div class="visit-work-container">
+                                    <button onclick="window.open('https://lorenzomoccia.com','_blank')" class="visit-work-btn">View</button>
                                 </div>
                                 <!--/BUTTON VISIT WORK-->
                             </div>
@@ -290,21 +304,23 @@
                         <!--WORK-->
                         <div class="work-card">
                             <!--WORK IMG-->
-                                <div class="work-img-container">
-
+                            <div class="work-img">
+                                <div class="work-img-container" id="spotify">
+                                    
                                 </div>
+                            </div>
                             <!--/WORK IMG-->
 
                             <!--WORK DESCR CONTAINER-->
                             <div class="work-descr-container">
                                 <div class="work-text-container">
-                                    <p class="work-title">Title</p>
-                                    <small>Web Design / 18 Sep. 2023</small>
+                                    <p class="work-title">Spotify Web</p>
+                                    <small id="portfolio-color">HTML & CSS</small>
                                 </div>
 
                                 <!--BUTTON VISIT WORK-->
-                                <div class="visit-work-circle">
-
+                                <div class="visit-work-container">
+                                    <button onclick="window.open('https://lorenzomoccia.com/html-css-spotifyweb/','_blank')" class="visit-work-btn">View</button>
                                 </div>
                                 <!--/BUTTON VISIT WORK-->
                             </div>
@@ -319,69 +335,71 @@
             <!--/WORKS-->
 
             <!--PROFILE-->
-            <section class="profile-section">
+            <section class="profile-section" id="contact">
                 <div class="profile-section-container">
                     <div class="profile-container">
-                        <div class="profile-circle-container">
-                        
-                        </div>
-    
-                        <div class="profile-title-container">
-                            <h2>LORENZO MOCCIA</h2>
-                        </div>
-    
-                        <div class="profile-descr-container">
-                            <p>Mi chiamo Lorenzo, ho 24 anni e sono un Full Stack Web Developer! Ho seguito il corso di Boolean Careers ed ora eccomi qua, in cerca di una nuova esperienza!</p>
-                        </div>
-                    </div>
+                        <div class="card dark">
+                            <img src="" alt="Profile Picture">
+                            <div class="info">
+                              <h2></h2>
+                              <a href="" target="_blank">View Profile</a>
+                              <p>Followers: <span class="followers"></span></p>
+                              <p>Following: <span class="following"></span></p>
+                              <p>Repositories: <span class="repositories"></span></p>
+                            </div>
+                          </div>
+
+                    </div> 
                 </div>
             </section>
             <!--/PROFILE-->
-
-            <!--CONTACT US-->
-            <section id="contact">
-                <div class="contact-box">
-                  <div class="contact-links">
-                    <h2>CONTACT</h2>
-                    <div class="links">
-                      <div class="link">
-                        <a><img src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" alt="linkedin"></a>
-                      </div>
-                      <div class="link">
-                        <a><img src="https://i.postimg.cc/YCV2QBJg/github.png" alt="github"></a>
-                      </div>
-                      <div class="link">
-                        <a><img src="https://i.postimg.cc/W4Znvrry/codepen.png" alt="codepen"></a>
-                      </div>
-                      <div class="link">
-                        <a><img src="https://i.postimg.cc/NjLfyjPB/email.png" alt="email"></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="contact-form-wrapper">
-                    <form>
-                      <div class="form-item">
-                        <input type="text" name="sender" required>
-                        <label>Name:</label>
-                      </div>
-                      <div class="form-item">
-                        <input type="text" name="email" required>
-                        <label>Email:</label>
-                      </div>
-                      <div class="form-item">
-                        <textarea class="" name="message" required></textarea>
-                        <label>Message:</label>
-                      </div>
-                      <button class="submit-btn">Send</button>  
-                    </form>
-                  </div>
-                </div>
-            </section>
-            <!--/CONTACT US-->
         </div>
         <!--/PAGE CONTAINER-->
     </main>
 
-    <footer></footer>
+    <footer>
+        <!--CONTACT US-->
+        <section id="contact">
+            <div class="contact-box">
+              <div class="contact-links">
+                <h2>CONTACT</h2>
+                <div class="links">
+                  <div class="link">
+                    <a><img src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" alt="linkedin" class="img-size"></a>
+                  </div>
+                  <div class="link">
+                    <a><img src="https://i.postimg.cc/YCV2QBJg/github.png" alt="github" class="img-size"></a>
+                  </div>
+                  <div class="link">
+                    <a><img src="https://i.postimg.cc/W4Znvrry/codepen.png" alt="codepen"  class="img-size"></a>
+                  </div>
+                  <div class="link">
+                    <a><img src="https://i.postimg.cc/NjLfyjPB/email.png" alt="email" class="img-size"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-form-wrapper">
+                <form>
+                  <div class="form-item">
+                    <input type="text" name="sender" required>
+                    <label>Name:</label>
+                  </div>
+                  <div class="form-item">
+                    <input type="text" name="email" required>
+                    <label>Email:</label>
+                  </div>
+                  <div class="form-item">
+                    <textarea class="" name="message" required></textarea>
+                    <label>Message:</label>
+                  </div>
+                  <button class="submit-btn">Send</button>  
+                </form>
+              </div>
+            </div>
+        </section>
+        <!--/CONTACT US-->
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
